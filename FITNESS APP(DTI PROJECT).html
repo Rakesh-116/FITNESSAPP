@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="FITNESS APP(DTI PROJECT).css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>JOYFIT</title>
+</head>
+
+<body>
+    <div id="section-loginpage">
+        <div class="login-container d-flex flex-column justify-content-center">
+            <h1 class="main-heading d-flex flex-row justify-content-center">JOYFIT</h1>
+            <div class="d-flex flex-row justify-content-center">
+                <div style="background: rgba(0,0,0,0.39);" class="card d-flex flex-row justify-content-center">
+                    <form action="/action.php">
+                        <div class="card-text">
+                            <input type="text" placeholder="Username">
+                            <br>
+                            <br>
+                            <input type="password" placeholder="Password">
+                            <br>
+                        </div>
+                        <br>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <div style="background: rgba(0,0,0,0.39);" class="card d-flex flex-row justify-content-center">
+                    <button class="card-button" onclick="display('section-fitness-personal-info-page')">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-fitness-personal-info-page">
+        <div class="personal-info-container d-flex flex-row justify-content-center">
+            <div class="personal-info-card d-flex flex-column justify-content-center">
+                <div style="background:rgba(255, 255, 255, 0.767); height:400px;padding:10px; border-radius: 8px;">
+                    <form action="/action.php">
+                        <div class="card-text">
+                            <input type="text" placeholder="Enter your full name">
+                            <br>
+                            <br>
+                            <input type="number" placeholder="Enter your age">
+                            <br>
+                        </div>
+                        <label for="GENDER">
+                            <b>Gender:</b>
+                        </label>
+                        <br>
+                        <label for="101">
+                            <input type="radio" value="MALE" name="GENDER" id="101">MALE
+                        </label>
+                        <br>
+                        <label for="102">
+                            <input type="radio" value="FEMALE" name="GENDER" id="102">FEMALE
+                        </label>
+                        <BR>
+                        <label for="103">
+                            <input type="radio" value="OTHER" name="GENDER" id="102">OTHER
+                        </label>
+                        <br>
+                        <div class="card-text">
+                            <input type="number" placeholder="Enter your height(in cm)">
+                            <br>
+                            <br>
+                            <input type="number" placeholder="Enter your weight(in KG)">
+                            <br>
+                        </div>
+                        <br>
+                    </form>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="personal-info-card d-flex flex-row justify-content-center">
+                            <button class="card-button" onclick="display('section-fitness-home-page')">Submit</button>
+                            <button class="card-button" onclick="display('section-loginpage')">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-fitness-home-page">
+        <div class="home-container">
+            <div class=" d-flex flex-row justify-content-start">
+            <div class="home-card">
+                <div class="d-flex flex-row">
+                    <img src="C:\Users\rakes\OneDrive\Desktop\KLH\1ST YEAR EVEN SEM\DTI\logo1.jpeg" class="home-img" />
+                    <button class="home-heading home-button" onclick="display('section-aboutus')">. JOYFIT</button>
+                    <br>
+                </div>
+                <br>
+                <button class="home-contents home-button" onclick="display('section-yoga-page')">Yoga</button>
+                <hr style="width:50%;color:white">
+                <button class="home-contents home-button" onclick="display('section-Exercise-page')">Exercise</button>
+                <br>
+                <hr style="width:50%;text-align:left;margin-left:0">
+                <button class="home-contents home-button" onclick="display('section-self-defence-page')">Self Defence</button>
+                <br>
+                <hr style="width:50%;text-align:left;margin-left:0">
+                <button class="home-contents home-button" onclick="display('section-health-page')">Health</button>
+                <br>
+                <hr style="width:50%;text-align:left;margin-left:0">
+                <br>
+                <button class="home-contents home-button" onclick="display('section-loginpage')">Logout</button>
+            </div>
+            <hr/>
+            <br>
+            <div class="carousal-card">
+                    <div>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="C:\Users\rakes\OneDrive\Desktop\KLH\1ST YEAR EVEN SEM\DTI\exercise pic-1.png" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="C:\Users\rakes\OneDrive\Desktop\KLH\1ST YEAR EVEN SEM\DTI\yoga pic-1.png" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="C:\Users\rakes\OneDrive\Desktop\KLH\1ST YEAR EVEN SEM\DTI\self-defence pic-1.png" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <br>
+                            <h1 class="home-quote"><b>Get Fit and Feel Strong with JOYFIT.</b></h1>
+                            <p class="home-sentence">Improve your health with our range of yoga, exercises and self-defence courses.</p>
+                            
+                            <h1 class="home-quote"><b>Improve your health.</b></h1>
+                            <p class="home-sentence">With JOYFIT, you can improve your overall health with our range of yoga, exercises and self-defence courses.</p>
+                           
+                            <h1 class="home-quote"><b>Feel strong and powerful.</b></h1>
+                            <p class="home-sentence">Whether you're looking to build strength or learn self-defence, FitFriend helps you to feel confident and powerful.</p>
+                        </div>
+                    </div>
+               <br>  
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="section-aboutus">
+        <div class="aboutus-container">
+            <h1 class="aboutus-head">About Us</h1>
+            <div class="aboutus-para">
+                <p class="aboutus-para">Hi this is my team</p>
+                <ul>
+                    <li>manaswija</li>
+                    <li>Bhavya</li>
+                    <li>Vyseshika</li>
+                    <li>Tejaswini</li>
+                    <li>shreya</li>
+                    <li>Abhinav</li>
+                    <li>saiteja</li>
+                    <li>Rakesh</li>
+                </ul>
+            </div>
+            <button class="aboutus-button" onclick="display('section-fitness-home-page')">Back</button>
+        </div>
+    </div>
+
+    <div id="section-yoga-page">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <h1 class="yoga-heading">YOGA</h1>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-link active" id="navItem1" href="#">
+                    Types of Yoga
+                    <span class="sr-only">(current)</span>
+                  </a>
+                  <a class="nav-link" href="#section-Explore-us" id="navItem2">Why Yoga</a>
+                  <a class="nav-link" href="#section-Payment" id="navItem3">Featured courses</a>
+                  <a class="nav-link" href="#" id="navItem4">Follow Us</a>
+                  <button class="nav-button" onclick="display('section-fitness-home-page')">Back</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+            <div class="yoga-container pb-3 pt-3 d-flex flex-column">
+                <div class="container-fluid text-center m-3 ">
+                    <h1 class="banner-head">WELCOME TO <BR><SPAN style="font-size:40px; font-weight: bolder;">JOYFIT</SPAN></h1>
+                        <br>
+                    <p class="banner-description">JOYFIT helps you to balance your Thoughts and Actions.</p>
+                    <br>
+                    <button class="banner-button">Read More</button>
+                </div>
+            </div>
+            <div class="col-12 text-center pt-4 pb-4">
+                <h1 class="yoga-head-description pb-2">A BRIEF DESCRIPTION ABOUT THE WAYS OF YOGA</h1>
+                <p class="yoga-para-description p-2">We at JOYFIT provide various services to the nature of the clients. Wish how you would like to spend the time here
+                    we can talk and come to a conclusion.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h1 class="col-12 text-center yoga-head-description">TYPES OF YOGA</h1>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <h1 class="menu-card-title" style="color:pink;">Vinyasa yoga</h1>
+                            <br>
+                          <img
+                            src="https://static.vecteezy.com/system/resources/previews/004/105/680/original/ashtanga-vinyasa-yoga-lotus-position-abstract-woman-portrait-afro-american-black-skin-girl-vector.jpg"
+                            class="menu-item-image w-100"
+                          />
+                          <hr style="color:#51360c"/>
+                          <p class="yoga-para-description" style="color:pink;">Lusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias provident destiny is about voles.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <h1 class="menu-card-title" style="color:rgb(107, 107, 16);">Hatha yoga</h1>
+                            <br>
+                          <img
+                            src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb2.jpg"
+                            class="menu-item-image w-100"
+                          />
+                          <hr style="color:#51360c"/>
+                          <p class="yoga-para-description" style="color:rgb(107, 107, 16);">Lusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias provident destiny is about voles.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <h1 class="menu-card-title" style="color:skyblue;">Iyengar yoga</h1>
+                            <br>
+                          <img
+                            src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb3.jpg"
+                            class="menu-item-image w-100"
+                          />
+                          <hr style="color:#51360c"/>
+                          <p class="yoga-para-description" style="color:skyblue;">Lusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias provident destiny is about voles.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <h1 class="menu-card-title" style="color:burlywood;">Kundalini yoga</h1>
+                            <br>
+                          <img
+                            src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/icon-thumb4.jpg"
+                            class="menu-item-image w-100"
+                          />
+                          <hr style="color:#51360c"/>
+                          <p class="yoga-para-description" style="color:burlywood;">Lusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias provident destiny is about voles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h1 class="col-12 text-center yoga-head-description pt-4 pb-4" style="font-size:30px;">WHY YOGA?</h1>
+
+                    <div class="col-12 text-center col-md-6">
+                      <div class="p-3 m-3 d-flex flex-row">
+                        <img src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-ying-yang@2x.png" class="why-yoga-img"/>
+                        <p class="why-yoga-para">Yoga improves strength, balance and flexibility.
+                            Slow movements and deep breathing increase blood flow and warm up muscles, while holding a pose can build strength.</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 text-center col-md-6">
+                        <div class="p-3 m-3 d-flex flex-row">
+                          <img src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-stones@2x.png" class="why-yoga-img"/>
+                          <p class="why-yoga-para">Yoga relaxes you, to help you sleep better.
+                            Research shows that a consistent bedtime yoga routine can help you get in the right mindset and prepare your body to fall asleep and stay asleep.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center col-md-6">
+                        <div class="p-3 m-3 d-flex flex-row">
+                          <img src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-cog-wheel@2x.png" class="why-yoga-img"/>
+                          <p class="why-yoga-para">Yoga can mean more energy and brighter moods.
+                            You may feel increased mental and physical energy, a boost in alertness and enthusiasm, and fewer negative feelings after getting into a routine of practicing yoga.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center col-md-6">
+                        <div class="p-3 m-3 d-flex flex-row">
+                          <img src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-learning@2x.png" class="why-yoga-img"/>
+                          <p class="why-yoga-para">Yoga improves strength, balance and flexibility.
+                            Slow movements and deep breathing increase blood flow and warm up muscles, while holding a pose can build strength.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container  text-center pt-5 pb-5">
+                <div class="row">
+                    <h1 class="col-12 yoga-head-description" style="font-size:35px; font-weight:300;">Featured Coureses</h1>
+                    <p class="col-12 yoga-para-description">We at JOYFIT provide various services to the nature of the clients. Wish how you would like to spend the time here
+                        we can talk and come to a conclusion.</p>
+                    
+                        <div class="col-12 col-md-6">
+                            <div class="shadow menu-item-card p-3 mb-3">
+                                <img
+                                src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/course1.jpg"
+                                class="menu-item-image w-100"
+                              />
+                                <h1 class="courses-head">Teaching a Yoga Class Phase 1 </h1>
+                                <br>
+                                <p class="courses-para">30 Days | 28 Classes | Advanced</p>
+                              <hr style="color:#51360c"/>
+                              <div class="d-flex flex-row justify-content-center">
+                                <img src="C:\Users\rakes\Downloads\clock-icon-clock-time-symbol-flat-style-design-web-site-icon-logo-app-ui-illustration-eps10-free-vector-removebg-preview.png" class="clock ml-1">
+                                <p class="yoga-para-description">1:00 hr/day</p>
+                                <p class="courses-para ml-3" style="padding: 5px; background-color: #dad8d4;">Course Cost: 999/-</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="shadow menu-item-card p-3 mb-3">
+                                <img
+                                src="https://kriyawp.wpengine.com/wp-content/uploads/2016/06/course5.jpg"
+                                class="menu-item-image w-100"
+                              />
+                                <h1 class="courses-head">Warming up for a Yoga Class (Part 5)</h1>
+                                <br>
+                                <p class="courses-para">7 Days | 5 Classes</p>
+                              <hr style="color:#51360c"/>
+                              <div class="d-flex flex-row justify-content-center">
+                                <img src="C:\Users\rakes\Downloads\clock-icon-clock-time-symbol-flat-style-design-web-site-icon-logo-app-ui-illustration-eps10-free-vector-removebg-preview.png" class="clock ml-1">
+                                <p class="yoga-para-description">2:00 hrs/day</p>
+                                <p class="courses-para ml-3" style="padding: 5px; background-color: #dad8d4;">Course Cost: 299/-</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="shadow menu-item-card p-3 mb-3">
+                                <img
+                                src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/course8.jpg"
+                                class="menu-item-image w-100"
+                              />
+                                <h1 class="courses-head">Yoga for better and Healthy Living</h1>
+                                <br>
+                                <p class="courses-para">30 Days | 28 Classes | Beginner</p>
+                              <hr style="color:#51360c"/>
+                              <div class="d-flex flex-row justify-content-center">
+                                <img src="C:\Users\rakes\Downloads\clock-icon-clock-time-symbol-flat-style-design-web-site-icon-logo-app-ui-illustration-eps10-free-vector-removebg-preview.png" class="clock ml-1">
+                                <p class="yoga-para-description">4:00 hrs/day</p>
+                                <p class="courses-para ml-3" style="padding: 5px; background-color: #dad8d4;">Course Cost: 349/-</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="shadow menu-item-card p-3 mb-3">
+                                <img
+                                src="https://kriyawp.wpengine.com/wp-content/uploads/2015/06/blog2.jpg"
+                                class="menu-item-image w-100"
+                              />
+                                <h1 class="courses-head">Teaching a Yoga Class Phase 2</h1>
+                                <br>
+                                <p class="courses-para">30 Days | 28 Classes | Intermediate</p>
+                              <hr style="color:#51360c"/>
+                              <div class="d-flex flex-row justify-content-center">
+                                <img src="C:\Users\rakes\Downloads\clock-icon-clock-time-symbol-flat-style-design-web-site-icon-logo-app-ui-illustration-eps10-free-vector-removebg-preview.png" class="clock ml-1">
+                                <p class="yoga-para-description">1:50 hrs/day</p>
+                                <p class="courses-para ml-3" style="padding: 5px; background-color: #dad8d4;">Course Cost: 499/-</p>
+                              </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <h1 class="text-center yoga-head-description pt-4 pb-4" style="font-size:30px;">FOLLOW US</h1>
+            <div class="follow-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 pt-4" style="text-align: right;">
+                        <h1 class="yoga-head-description">WORK HOURS</h1>
+                        <hr>
+                        <p class="courses-para"><b>Monday - Thursday</b><br>0600 - 1800 Hours</p>
+                        <hr>
+                        <p class="courses-para"><b>Friday & Saturday</b><br>0600 - 0900 Hours</p>
+                        <hr>
+                        <p class="courses-para"><b>And All the Sundays</b><br>Will be Holidays</p>
+                        <hr>
+                    </div>
+                    <div class="col-12 col-md-4 text-center pt-5" style="background-color: aliceblue;">
+                        <h1 class="yoga-head-description">J O Y F I T</h1>
+                        <br>
+                        <p class="courses-para">
+                            We at JOYFIT provide various services to the nature of the clients. Wish how you would like to spend the time here we can talk and come to a conclusion.
+                            
+                            Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper.</p>
+                    </div>
+                    <div class="col-12 col-md-4 pt-4">
+                        <h1 class="yoga-head-description">CONTACT US</h1>
+                        <hr>
+                        <p class="courses-para"><b>Toll Free:</b> 1234 5678<br><b>Fax:</b> 1224 1232 1423</p>
+                        <hr>
+                        <p class="courses-para"><b>Mail: </b>joyfit@gmail.com<br>admin123@gmail.com</p>
+                        <hr>
+                        <p class="courses-para"><b>KLH university</b><br>Aziznagar</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <div id="section-Exercise-page">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <h1 class="yoga-heading">EXERCISE</h1>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-link active" id="navItem1" href="#">
+                    Types of Exercise
+                    <span class="sr-only">(current)</span>
+                  </a>
+                  <a class="nav-link" href="#section-Explore-us" id="navItem2">Why Exercise</a>
+                  <a class="nav-link" href="#section-Payment" id="navItem3">Featured courses</a>
+                  <a class="nav-link" href="#" id="navItem4">Follow Us</a>
+                  <button class="nav-button" onclick="display('section-fitness-home-page')">Back</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+            <div class="exercise-container pb-3 pt-3 d-flex flex-column">
+                <div class="container-fluid text-center m-3 ">
+                    <h1 class="banner-head">WELCOME TO <BR><SPAN style="font-size:40px; font-weight: bolder;">JOYFIT</SPAN></h1>
+                    <br>
+                    <p class="banner-description">BE STRONG <BR> TRAIN HARD</p>
+                    <br>
+                    <button class="banner-button">Read More</button>
+                </div>
+            </div>
+            <div class="col-12 text-center pt-4 pb-4">
+                <h1 class="yoga-head-description pb-2">A BRIEF DESCRIPTION ABOUT THE WAYS OF EXERCISE</h1>
+                <p class="yoga-para-description p-2">We at JOYFIT provide various services to the nature of the clients. Wish how you would like to spend the time here
+                    we can talk and come to a conclusion.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h1 class="col-12 text-center yoga-head-description">TYPES OF EXERCISES</h1>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <h1 class="menu-card-title" style="color:pink;">Aerobic Training</h1>
+                            <br>
+                          <img
+                            src="https://t3.ftcdn.net/jpg/02/05/03/34/360_F_205033420_Xnx4N0DzrgKeMdscxXr37tFrtohxfT63.jpg"
+                            class="menu-item-image w-100"
+                          />
+                          <hr style="color:#51360c"/>
+                          <p class="yoga-para-description" style="color:pink;">Aerobic training exercises are any activities that raise heart rate and make breathing somewhat harder. The activity you are doing must be constant and continuous.Examples of aerobic activities are. Walking or hiking. Jogging or running.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <h1 class="menu-card-title" style="color:rgb(107, 107, 16);">Dancing Exercise</h1>
+                            <br>
+                          <img
+                            src="https://img.freepik.com/free-vector/illustrated-dance-fitness-class_52683-58310.jpg?w=2000"
+                            class="menu-item-image w-100"
+                          />
+                          <hr style="color:#51360c"/>
+                          <p class="yoga-para-description" style="color:rgb(107, 107, 16);">When we speak of dancing, we are referring to ballet, jazz, Zumba, and so much more. They are usually called workouts with low impact because they are slow-paced compared to other aerobic workouts.improved condition of your heart and lungs.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <h1 class="menu-card-title" style="color:skyblue;">Biking</h1>
+                            <br>
+                          <img
+                            src="https://www.health.com/thmb/KIpMvWkBlA5sd5ouYCRJrylo3To=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/gettyimages-135537873-2000-3b57976b084d4731a41f801c6b1af884.jpg"
+                            class="menu-item-image w-100"
+                          />
+                          <hr style="color:#51360c"/>
+                          <p class="yoga-para-description" style="color:skyblue;">Cycling is a low impact aerobic exercise that offers a wealth of benefits. It also varies in intensity, so it’s suitable for all levels. You can cycle as a mode of transportation, for casual activity, or as an intense, competitive endeavor.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <h1 class="menu-card-title" style="color:burlywood;">Anaerobic Training</h1>
+                            <br>
+                          <img
+                            src="https://assets-global.website-files.com/633611cb47a5328482fa9716/6373b34def53e36decf44d04_633611cb47a5321c08fa9d2f_anaerobic-exercise.jpeg"
+                            class="menu-item-image w-100"
+                          />
+                          <hr style="color:#51360c"/>
+                          <p class="yoga-para-description" style="color:burlywood;">Anaerobic exercise involves short, fast, high-intensity exercises that don't make your body use oxygen like it does for cardio (or aerobic) activities. Instead, anaerobic activities break down glucose that's already in your muscles for a form of energy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h1 class="col-12 text-center yoga-head-description pt-4 pb-4" style="font-size:30px;">WHY EXERCISE?</h1>
+
+                    <div class="col-12 text-center col-md-6">
+                      <div class="p-3 m-3 d-flex flex-row">
+                        <img src="C:\Users\rakes\Downloads\429d631659a11a9eb666b103d811470a-removebg-preview.png" class="why-exercise-img"/>
+                        <p class="why-yoga-para">Exercise improves strength, balance and flexibility.
+                            Slow movements and deep breathing increase blood flow and warm up muscles, while holding a pose can build strength.</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12 text-center col-md-6">
+                        <div class="p-3 m-3 d-flex flex-row">
+                          <img src="C:\Users\rakes\Downloads\images-removebg-preview (1).png" class="why-exercise-img"/>
+                          <p class="why-yoga-para">Exercise relaxes you, to help you sleep better.
+                            Research shows that a consistent bedtime yoga routine can help you get in the right mindset and prepare your body to fall asleep and stay asleep.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center col-md-6">
+                        <div class="p-3 m-3 d-flex flex-row">
+                          <img src="C:\Users\rakes\Downloads\png-transparent-black-signage-physical-fitness-fitness-centre-physical-exercise-computer-icons-fitness-icon-exercise-fitness-gym-fitness-text-sport-removebg-preview.png" class="why-exercise-img"/>
+                          <p class="why-yoga-para">Exercise can mean more energy and brighter moods.
+                            You may feel increased mental and physical energy, a boost in alertness and enthusiasm, and fewer negative feelings after getting into a routine of practicing yoga.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center col-md-6">
+                        <div class="p-3 m-3 d-flex flex-row">
+                          <img src="C:\Users\rakes\Downloads\exercise-icon-9-removebg-preview.png" class="why-exercise-img"/>
+                          <p class="why-yoga-para">Exercise improves strength, balance and flexibility.
+                            Slow movements and deep breathing increase blood flow and warm up muscles, while holding a pose can build strength.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dance-bg pt-5 pb-5">
+              <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                      <h1 class="dance-head">Let's Dance </h1>
+                    </div>
+                    <div class="col-12 col-md-6">
+                          <audio controls autoplay>
+                            <source src="Naatu Naatu(PagalWorld.com.se).mp3">
+                          </audio>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="container  text-center pt-5 pb-5">
+                <div class="row">
+                    <h1 class="col-12 yoga-head-description" style="font-size:35px; font-weight:300;">Featured Coureses</h1>
+                    <p class="col-12 yoga-para-description">We at JOYFIT provide various services to the nature of the clients. Wish how you would like to spend the time here
+                        we can talk and come to a conclusion.</p>
+                    
+                        <div class="col-12 col-md-6">
+                            <div class="shadow menu-item-card p-3 mb-3">
+                                <img
+                                src="https://html.modernwebtemplates.com/sporttrainers/images/classes/img_classes-09.jpg"
+                                class="menu-item-image w-100"
+                              />
+                                <h1 class="courses-head">Full Body Exercises phase 1</h1>
+                                <br>
+                                <p class="courses-para">30 Days | 28 Classes | Beginner</p>
+                              <hr style="color:#51360c"/>
+                              <div class="d-flex flex-row justify-content-center">
+                                <img src="C:\Users\rakes\Downloads\clock-icon-clock-time-symbol-flat-style-design-web-site-icon-logo-app-ui-illustration-eps10-free-vector-removebg-preview.png" class="clock ml-1">
+                                <p class="yoga-para-description">1:00 hr/day</p>
+                                <p class="courses-para ml-3" style="padding: 5px; background-color: #dad8d4;">Course Cost: 349/-</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="shadow menu-item-card p-3 mb-3">
+                                <img
+                                src="https://html.modernwebtemplates.com/sporttrainers/images/instagram_block/img_instagram-04.jpg"
+                                class="menu-item-image w-100"
+                              />
+                                <h1 class="courses-head">Chest and Shoulder Exercises</h1>
+                                <br>
+                                <p class="courses-para">30 Days | 28 Classes | Intermediate</p>
+                              <hr style="color:#51360c"/>
+                              <div class="d-flex flex-row justify-content-center">
+                                <img src="C:\Users\rakes\Downloads\clock-icon-clock-time-symbol-flat-style-design-web-site-icon-logo-app-ui-illustration-eps10-free-vector-removebg-preview.png" class="clock ml-1">
+                                <p class="yoga-para-description">1:50 hrs/day</p>
+                                <p class="courses-para ml-3" style="padding: 5px; background-color: #dad8d4;">Course Cost: 499/-</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="shadow menu-item-card p-3 mb-3">
+                                <img
+                                src="https://html.modernwebtemplates.com/sporttrainers/images/instagram_block/img_instagram-08.jpg"
+                                class="menu-item-image w-100"
+                              />
+                                <h1 class="courses-head">Arms and Leg Exercises</h1>
+                                <br>
+                                <p class="courses-para">30 Days | 28 Classes | Beginner</p>
+                              <hr style="color:#51360c"/>
+                              <div class="d-flex flex-row justify-content-center">
+                                <img src="C:\Users\rakes\Downloads\clock-icon-clock-time-symbol-flat-style-design-web-site-icon-logo-app-ui-illustration-eps10-free-vector-removebg-preview.png" class="clock ml-1">
+                                <p class="yoga-para-description">1:00 hr/day</p>
+                                <p class="courses-para ml-3" style="padding: 5px; background-color: #dad8d4;">Course Cost: 349/-</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="shadow menu-item-card p-3 mb-3">
+                                <img
+                                src="https://html.modernwebtemplates.com/sporttrainers/images/instagram_block/img_instagram-06.jpg"
+                                class="menu-item-image w-100"
+                              />
+                                <h1 class="courses-head">Full Body Exercises Phase 2</h1>
+                                <br>
+                                <p class="courses-para">30 Days | 28 Classes | Intermediate</p>
+                              <hr style="color:#51360c"/>
+                              <div class="d-flex flex-row justify-content-center">
+                                <img src="C:\Users\rakes\Downloads\clock-icon-clock-time-symbol-flat-style-design-web-site-icon-logo-app-ui-illustration-eps10-free-vector-removebg-preview.png" class="clock ml-1">
+                                <p class="yoga-para-description">1:50 hrs/day</p>
+                                <p class="courses-para ml-3" style="padding: 5px; background-color: #dad8d4;">Course Cost: 499/-</p>
+                              </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <h1 class="text-center yoga-head-description pt-4 pb-4" style="font-size:30px;">FOLLOW US</h1>
+            <div class="follow-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 pt-4" style="text-align: right;">
+                        <h1 class="yoga-head-description">WORK HOURS</h1>
+                        <hr>
+                        <p class="courses-para"><b>Monday - Thursday</b><br>0600 - 1800 Hours</p>
+                        <hr>
+                        <p class="courses-para"><b>Friday & Saturday</b><br>0600 - 0900 Hours</p>
+                        <hr>
+                        <p class="courses-para"><b>And All the Sundays</b><br>Will be Holidays</p>
+                        <hr>
+                    </div>
+                    <div class="col-12 col-md-4 text-center pt-5" style="background-color: aliceblue;">
+                        <h1 class="yoga-head-description">J O Y F I T</h1>
+                        <br>
+                        <p class="courses-para">
+                            We at JOYFIT provide various services to the nature of the clients. Wish how you would like to spend the time here we can talk and come to a conclusion.
+                            
+                            Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper.</p>
+                    </div>
+                    <div class="col-12 col-md-4 pt-4">
+                        <h1 class="yoga-head-description">CONTACT US</h1>
+                        <hr>
+                        <p class="courses-para"><b>Toll Free:</b> 1234 5678<br><b>Fax:</b> 1224 1232 1423</p>
+                        <hr>
+                        <p class="courses-para"><b>Mail: </b>joyfit@gmail.com<br>admin123@gmail.com</p>
+                        <hr>
+                        <p class="courses-para"><b>KLH university</b><br>Aziznagar</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <div id="section-self-defence-page">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h1 class="yoga-heading">SELF DEFENCE</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active" id="navItem1" href="#">
+                Types of Self Defence
+                <span class="sr-only">(current)</span>
+              </a>
+              <a class="nav-link" href="#section-Explore-us" id="navItem2">Why Self Defence</a>
+              <a class="nav-link" href="#section-Payment" id="navItem3">Featured courses</a>
+              <a class="nav-link" href="#" id="navItem4">Follow Us</a>
+              <button class="nav-button" onclick="display('section-fitness-home-page')">Back</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+        <div class="self-defence-container pb-3 pt-3 d-flex flex-column">
+            <div class="container-fluid text-center m-3 ">
+                <h1 class="banner-head">WELCOME TO <BR><SPAN style="font-size:40px; font-weight: bolder;">JOYFIT</SPAN></h1>
+                    <br>
+                <p class="banner-description">JOYFIT helps you to balance your Thoughts and Actions.</p>
+                <br>
+                <button class="banner-button">Read More</button>
+            </div>
+        </div>
+        <div class="col-12 text-center pt-4 pb-4">
+            <h1 class="yoga-head-description pb-2">A BRIEF DESCRIPTION ABOUT THE WAYS OF SELF DEFENCE</h1>
+            <p class="yoga-para-description p-2">We at JOYFIT provide various services to the nature of the clients. Wish how you would like to spend the time here
+                we can talk and come to a conclusion.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h1 class="col-12 text-center yoga-head-description">TYPES OF SELF DEFENCE</h1>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <h1 class="menu-card-title" style="color:pink;">Boxing</h1>
+                        <br>
+                      <img
+                        src="https://webdesign-finder.com/youko-boxing-school/wp-content/uploads/2017/08/img2-600x390.jpg"
+                        class="menu-item-image w-100"
+                      />
+                      <hr style="color:#51360c"/>
+                      <p class="yoga-para-description" style="color:pink;">Lusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias provident destiny is about voles.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <h1 class="menu-card-title" style="color:rgb(107, 107, 16);">Karate</h1>
+                        <br>
+                      <img
+                        src="https://webdesign-finder.com/youko/wp-content/uploads/2018/02/img_24-600x390.jpg"
+                        class="menu-item-image w-100"
+                      />
+                      <hr style="color:#51360c"/>
+                      <p class="yoga-para-description" style="color:rgb(107, 107, 16);">Lusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias provident destiny is about voles.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <h1 class="menu-card-title" style="color:skyblue;">Muay Thai</h1>
+                        <br>
+                      <img
+                        src="https://cdn.onefc.com/wp-content/uploads/2020/09/Felipe-Lobo-Yodpanomrung-Jitmuangnon-Muay-Thai-1920X1280-29.jpg"
+                        class="menu-item-image w-100"
+                      />
+                      <hr style="color:#51360c"/>
+                      <p class="yoga-para-description" style="color:skyblue;">Lusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias provident destiny is about voles.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <h1 class="menu-card-title" style="color:burlywood;">Judo</h1>
+                        <br>
+                      <img
+                        src="https://templates.cms-guide.com/47474/images/1page-img2.jpg"
+                        class="menu-item-image w-100"
+                      />
+                      <hr style="color:#51360c"/>
+                      <p class="yoga-para-description" style="color:burlywood;">Lusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias provident destiny is about voles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h1 class="col-12 text-center yoga-head-description pt-4 pb-4" style="font-size:30px;">WHY SELF DEFENCE?</h1>
+
+                <div class="col-12 text-center col-md-6">
+                  <div class="p-3 m-3 d-flex flex-row">
+                    <img src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-ying-yang@2x.png" class="why-yoga-img"/>
+                    <p class="why-yoga-para">Having the right form of confidence can change your life! SHIRUDO Self Defence programs not only teach the physical movements of defence, but also the mental and emotional strength one needs to have belief in one’s ability.</p>
+                  </div>
+                </div>
+
+                <div class="col-12 text-center col-md-6">
+                    <div class="p-3 m-3 d-flex flex-row">
+                      <img src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-stones@2x.png" class="why-yoga-img"/>
+                      <p class="why-yoga-para">You will literally roll with the punches physically, but also mentally and emotionally.
+
+                        In order to properly learn self-defence, you will need to show up to martial arts classes or personal training sessions and develop habits that don’t come naturally.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center col-md-6">
+                    <div class="p-3 m-3 d-flex flex-row">
+                      <img src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-cog-wheel@2x.png" class="why-yoga-img"/>
+                      <p class="why-yoga-para">Life is all about setting goals. None of us just want to coast through life aimlessly.
+
+                        We make goals—big and small—and then we take steps to accomplish them.</p>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center col-md-6">
+                    <div class="p-3 m-3 d-flex flex-row">
+                      <img src="https://kriyawp.wpengine.com/wp-content/uploads/2016/05/ico-learning@2x.png" class="why-yoga-img"/>
+                      <p class="why-yoga-para">No matter what fitness level you are at, self-defence is one of the ultimate forms of keeping healthy as it involves the whole body – from head to toe. The best part is that the health benefits extend to the mind and emotions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container  text-center pt-5 pb-5">
+            <div class="row">
+                <h1 class="col-12 yoga-head-description" style="font-size:35px; font-weight:300;">Featured Coureses</h1>
+                <p class="col-12 yoga-para-description">We at JOYFIT provide various services to the nature of the clients. Wish how you would like to spend the time here
+                    we can talk and come to a conclusion.</p>
+                
+                    <div class="col-12 col-md-6">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img
+                            src="https://webdesign-finder.com/youko/wp-content/uploads/2018/02/img_11-600x390.jpg"
+                            class="menu-item-image w-100"
+                          />
+                            <h1 class="courses-head">Kid's Karate programme</h1>
+                            <br>
+                            <p class="courses-para">30 Days | 28 Classes | Beginner</p>
+                          <hr style="color:#51360c"/>
+                          <div class="d-flex flex-row justify-content-center">
+                            <img src="C:\Users\rakes\Downloads\clock-icon-clock-time-symbol-flat-style-design-web-site-icon-logo-app-ui-illustration-eps10-free-vector-removebg-preview.png" class="clock ml-1">
+                            <p class="yoga-para-description">1:00 hr/day</p>
+                            <p class="courses-para ml-3" style="padding: 5px; background-color: #dad8d4;">Course Cost: 349/-</p>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img
+                            src="https://webdesign-finder.com/youko/wp-content/uploads/2018/02/img_25-600x390.jpg"
+                            class="menu-item-image w-100"
+                          />
+                            <h1 class="courses-head">Teen & Adult Karate</h1>
+                            <br>
+                            <p class="courses-para">30 Days | 28 Classes | Intermediate</p>
+                          <hr style="color:#51360c"/>
+                          <div class="d-flex flex-row justify-content-center">
+                            <img src="C:\Users\rakes\Downloads\clock-icon-clock-time-symbol-flat-style-design-web-site-icon-logo-app-ui-illustration-eps10-free-vector-removebg-preview.png" class="clock ml-1">
+                            <p class="yoga-para-description">2:00 hrs/day</p>
+                            <p class="courses-para ml-3" style="padding: 5px; background-color: #dad8d4;">Course Cost: 499/-</p>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img
+                            src="https://webdesign-finder.com/youko/wp-content/uploads/2018/02/img_9-600x390.jpg"
+                            class="menu-item-image w-100"
+                          />
+                            <h1 class="courses-head">Traditional Martial Arts</h1>
+                            <br>
+                            <p class="courses-para">30 Days | 28 Classes | Beginner</p>
+                          <hr style="color:#51360c"/>
+                          <div class="d-flex flex-row justify-content-center">
+                            <img src="C:\Users\rakes\Downloads\clock-icon-clock-time-symbol-flat-style-design-web-site-icon-logo-app-ui-illustration-eps10-free-vector-removebg-preview.png" class="clock ml-1">
+                            <p class="yoga-para-description">4:00 hrs/day</p>
+                            <p class="courses-para ml-3" style="padding: 5px; background-color: #dad8d4;">Course Cost: 349/-</p>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img
+                            src="https://webdesign-finder.com/youko/wp-content/uploads/2018/02/img_7-600x390.jpg"
+                            class="menu-item-image w-100"
+                          />
+                            <h1 class="courses-head">Kung-Fu Training</h1>
+                            <br>
+                            <p class="courses-para">30 Days | 28 Classes | Intermediate</p>
+                          <hr style="color:#51360c"/>
+                          <div class="d-flex flex-row justify-content-center">
+                            <img src="C:\Users\rakes\Downloads\clock-icon-clock-time-symbol-flat-style-design-web-site-icon-logo-app-ui-illustration-eps10-free-vector-removebg-preview.png" class="clock ml-1">
+                            <p class="yoga-para-description">1:50 hrs/day</p>
+                            <p class="courses-para ml-3" style="padding: 5px; background-color: #dad8d4;">Course Cost: 499/-</p>
+                          </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <h1 class="text-center yoga-head-description pt-4 pb-4" style="font-size:30px;">FOLLOW US</h1>
+        <div class="follow-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 pt-4" style="text-align: right;">
+                    <h1 class="yoga-head-description">WORK HOURS</h1>
+                    <hr>
+                    <p class="courses-para"><b>Monday - Thursday</b><br>0600 - 1800 Hours</p>
+                    <hr>
+                    <p class="courses-para"><b>Friday & Saturday</b><br>0600 - 0900 Hours</p>
+                    <hr>
+                    <p class="courses-para"><b>And All the Sundays</b><br>Will be Holidays</p>
+                    <hr>
+                </div>
+                <div class="col-12 col-md-4 text-center pt-5" style="background-color: aliceblue;">
+                    <h1 class="yoga-head-description">J O Y F I T</h1>
+                    <br>
+                    <p class="courses-para">
+                        We at JOYFIT provide various services to the nature of the clients. Wish how you would like to spend the time here we can talk and come to a conclusion.
+                        
+                        Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper.</p>
+                </div>
+                <div class="col-12 col-md-4 pt-4">
+                    <h1 class="yoga-head-description">CONTACT US</h1>
+                    <hr>
+                    <p class="courses-para"><b>Toll Free:</b> 1234 5678<br><b>Fax:</b> 1224 1232 1423</p>
+                    <hr>
+                    <p class="courses-para"><b>Mail: </b>joyfit@gmail.com<br>admin123@gmail.com</p>
+                    <hr>
+                    <p class="courses-para"><b>KLH university</b><br>Aziznagar</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="section-health-page">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h1 class="yoga-heading">HEALTH & CARE</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active" id="navItem1" href="#">
+                Few Tips
+                <span class="sr-only">(current)</span>
+              </a>
+              <a class="nav-link" href="#section-Explore-us" id="navItem2">Why should we stay Healthy?</a>
+              <a class="nav-link" href="#section-Payment" id="navItem3">Recommended Meals</a>
+              <a class="nav-link" href="#" id="navItem4">Follow Us</a>
+              <button class="nav-button" onclick="display('section-fitness-home-page')">Back</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+        <div class="health-container pb-3 pt-3 d-flex flex-column">
+            <div class="container-fluid m-3 d-flex felx-row">
+              <div class="text-center">
+                <h1 class="banner-head">WELCOME TO <BR><SPAN style="font-size:40px; font-weight: bolder;">JOYFIT</SPAN></h1>
+                    <br>
+                <p class="banner-description">JOYFIT also assists you with the Health and Food instructions.</p>
+                <br>
+                <button class="banner-button">Read More</button>
+                </div>
+                <div>
+                  <img src="C:\Users\rakes\Downloads\VU3WHT-dXc03-0_IQ16f4-transformed-removebg-preview.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="pt-5 pb-5" style="background-color:#f9fbfe;">
+        <div class="container">
+          <div class="row">
+            <h1 class="col-12 text-center tips-head" style="color:#51360c;font-weight:bold;">FEW TIPS</h1>
+            <div class="col-12 col-md-5">
+                <img src="C:\Users\rakes\Downloads\introduction-to-the-478-breathing-technique-removebg-preview (3).png" class="tips-img"/>
+            </div>
+            <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+              <h1 class="tips-head">4-7-8 BREATHING TECHNIQUE</h1>
+              <p class="tips-para">Close your mouth and quietly inhale through your nose to a mental count of four. Hold your breath for a 
+                count of seven. Exhale through your mouth, making a whoosh sound for a count of eight. Repeat the process three more times for a 
+                total of four breath cycles.<br><span style="font-weight:bold;">Making Yourself Perfect in controlling you Breathing can Increase your Stamina Levels.</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-12 col-md-5 order-md-2">
+                <img src="C:\Users\rakes\Downloads\kisspng-running-track-and-field-athletics-clip-art-running-man-5a713db06de473.5403022415173708004501-removebg-preview.png" class="tips-img" style="width:450px;"/>
+            </div>
+            <div class="col-12 col-md-7 d-flex flex-column justify-content-center order-md-1">
+              <h1 class="tips-head">GO FOR A <span style="font-weight:700;">RUN..</span></h1>
+              <p class="tips-para">help to build strong bones, as it is a weight bearing exercise
+                strengthen muscles
+                improve cardiovascular fitness
+                burn plenty of kilojoules
+                help maintain a healthy weight.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="container">
+          <div class="row">
+              <h1 class="col-12 text-center yoga-head-description pt-4 pb-4" style="font-size:30px;">WHY SHOULD WE STAY HEALTHY?</h1>
+
+              <div class="col-12 text-center col-md-6">
+                <div class="p-3 m-3 d-flex flex-row">
+                  <img src="C:\Users\rakes\Downloads\istockphoto-1176980482-612x612-removebg-preview.png" class="why-exercise-img"/>
+                  <p class="why-yoga-para">Keeping healthy will also help you keep free of chronic diseases, like heart disease and cancer.
+                    Some more key advantages of eating healthily and working out regularly are that you will live longer, have more energy 
+                    in daily aspects of your life and you will also be keeping medicine bills down.</p>
+                </div>
+              </div>
+
+              <div class="col-12 text-center col-md-6">
+                  <div class="p-3 m-3 d-flex flex-row">
+                    <img src="C:\Users\rakes\Downloads\istockphoto-1130648688-612x612-removebg-preview.png" class="why-exercise-img"/>
+                    <p class="why-yoga-para">Helps You Live Longer
+                      This is one of the most obvious benefits of living a healthy lifestyle and is one of the main reasons why most people 
+                      look to exercise and eat a healthy diet. For those determined to get the most out of their body in terms of longevity, 
+                      there is a whole host of evidence that links staying healthy with longer life.</p>
+                  </div>
+              </div>
+
+              <div class="col-12 text-center col-md-6">
+                  <div class="p-3 m-3 d-flex flex-row">
+                    <img src="C:\Users\rakes\Downloads\3296841-removebg-preview.png" class="why-exercise-img"/>
+                    <p class="why-yoga-para">Avoid Addictions
+                      No matter what kind of addiction you are affected by a healthy lifestyle filled with exercise can limit your 
+                      desire for the addictive substance. Whether your vice of choice is food, drugs, or alcohol, you will find a runner’s 
+                      high just as addictive.</p>
+                  </div>
+              </div>
+
+              <div class="col-12 text-center col-md-6">
+                  <div class="p-3 m-3 d-flex flex-row">
+                    <img src="C:\Users\rakes\Downloads\png-clipart-health-care-computer-icons-medicine-health-fitness-and-wellness-caring-love-text-removebg-preview.png" class="why-exercise-img" style="width:80px;height:60px;"/>
+                    <p class="why-yoga-para">Feel Better About Yourself
+                      One of the main reasons why staying healthy can be of assistance to your life as you grow older. One of the main 
+                      benefits is that living a healthy lifestyle can make you feel more confident than ever before.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <div class="container pt-5 pb-5">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="menu-section-heading">Recommended Meals</h1>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">Avacado Toast</h1>
+                <p>Avocado has a buttery, savory taste, and eating the right portions of avocado can help improve bad cholesterol levels. 
+                  Avocados are full of heart-healthy unsaturated fats and fiber. Avocados are also considered brain food, so having avocado toast occasionally for breakfast can help you improve your brain health.</p>
+                  <button class="recommended-meals-button">Order Now</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="shadow menu-item-card p-3 mb-3">
+                <img
+                  src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">Fruits</h1>
+                <p>High in fibre content: The presence of dietary fibre in fruits can keep the blood cholesterol level in check and also reduce the risk of obesity and 
+                  type 2 diabetes in individuals. Fibre-rich fruits such as strawberry, apple, banana and mango also possess anti-carcinogenic properties.</p>
+                  <button class="recommended-meals-button">Order Now</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">High Nutrient Oat Meal</h1>
+                <p>oats and oatmeal have many health benefits. These include weight loss, lower blood sugar levels, and a reduced risk of heart disease. 
+                  Oats are among the healthiest grains on earth. They're a gluten-free whole grain and a great source of important vitamins, minerals, fiber, and antioxidants.</p>
+                  <button class="recommended-meals-button">Order Now</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://images.pexels.com/photos/1351238/pexels-photo-1351238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">Avacado Basil Toast</h1>
+                <p>Avocado has a buttery, savory taste, and eating the right portions of avocado can help improve bad cholesterol levels. 
+                  Avocados are full of heart-healthy unsaturated fats and fiber. Avocados are also considered brain food, so having avocado toast occasionally for breakfast can help you improve your brain health.</p>
+                  <button class="recommended-meals-button">Order Now</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXn73xJOkCOcTOZdpPbDUwcOPY03tWMki9KUbeGHauimy1gHzt"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">Mediterranean fruit</h1>
+                <p>It has a good amount of antioxidants which helps in preventing the risk of chronic disease. It can also prevent Alzheimer's disease and improves immunity.
+                   It helps to reduce the risk of cancers like breast cancer, colorectal cancer.</p>
+                   <button class="recommended-meals-button">Order Now</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">Caesar Salad</h1>
+                <p>It is a good protein source which helps the body in building strong tissues and muscles.
+                  It also regulates the hormones in your body and maintains the fluid balance.
+                  It is extremely beneficial for weight loss and weight management.
+                  It builds your immunity and helps in fighting against diseases.</p>
+                  <button class="recommended-meals-button">Order Now</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://images.pexels.com/photos/1516415/pexels-photo-1516415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">Fish Fillet</h1>
+                <p>What is fish fillets used for?
+                  There are ample recipes that can be prepared from the fish fillet, some of them are Parmesan crusted baked fish fillet, 
+                  baked halibut fillets with creamy mushroom sauce, grilled sea bass with garlic butter, fish florentine, broiled haddock, creamy fish chowder, fish cutlets, fish fingers, fish amritsari </p>
+                  <button class="recommended-meals-button">Order Now</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://images.pexels.com/photos/5254831/pexels-photo-5254831.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">Dry Friuts</h1>
+                <p>Dry fruits are loaded with essential oils, proteins, potassium, calcium that helps to increase your immunity. Also, the presence of antioxidants in it can help you to fight against various infections and illnesses.
+                  Dry fruits are rich in potassium, magnesium, calcium, zinc, phosphorus and various vitamins like vitamin A, D, B6, K1 and E. It also helps eliminate free  radicals  and relieve oxidative stress.
+                </p>
+                <button class="recommended-meals-button">Order Now</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="menu-item-card shadow p-3 mb-3">
+                <img
+                  src="https://images.pexels.com/photos/8951572/pexels-photo-8951572.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="menu-item-image w-100"
+                />
+                <h1 class="menu-card-title">Caviar</h1>
+                <p>High in good fat
+                  In addition, caviar is high in omega-3 fatty acids. These good fats improve your mood and memory (among other things, they also help protect your brain cells) and are critical to components of a healthy pregnancy, maternal nutrition and infant development.
+                  It will always have a mild fishiness and slight saltiness, but the taste of caviar is more like ocean water ,rather than in-your-face fish.
+                </p>
+                <button class="recommended-meals-button">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="text-center yoga-head-description pt-4 pb-4" style="font-size:30px;">FOLLOW US</h1>
+        <div class="follow-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 pt-4" style="text-align: right;">
+                    <h1 class="yoga-head-description">WORK HOURS</h1>
+                    <hr>
+                    <p class="courses-para"><b>Monday - Thursday</b><br>0600 - 1800 Hours</p>
+                    <hr>
+                    <p class="courses-para"><b>Friday & Saturday</b><br>0600 - 0900 Hours</p>
+                    <hr>
+                    <p class="courses-para"><b>And All the Sundays</b><br>Will be Holidays</p>
+                    <hr>
+                </div>
+                <div class="col-12 col-md-4 text-center pt-5" style="background-color: aliceblue;">
+                    <h1 class="yoga-head-description">J O Y F I T</h1>
+                    <br>
+                    <p class="courses-para">
+                        We at JOYFIT provide various services to the nature of the clients. Wish how you would like to spend the time here we can talk and come to a conclusion.
+                        
+                        Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper.</p>
+                </div>
+                <div class="col-12 col-md-4 pt-4">
+                    <h1 class="yoga-head-description">CONTACT US</h1>
+                    <hr>
+                    <p class="courses-para"><b>Toll Free:</b> 1234 5678<br><b>Fax:</b> 1224 1232 1423</p>
+                    <hr>
+                    <p class="courses-para"><b>Mail: </b>joyfit@gmail.com<br>admin123@gmail.com</p>
+                    <hr>
+                    <p class="courses-para"><b>KLH university</b><br>Aziznagar</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>

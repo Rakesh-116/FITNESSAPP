@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Bree Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.main-heading {
+    color: black;
+    font-family: "calibri";
+}
+
+.login-container {
+    background-image: url("https://img.freepik.com/premium-vector/seamless-fitness-pattern-dumbbells-dark-background_458779-1076.jpg?w=2000");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.personal-info-container {
+    background-image: url("https://cdn.pixabay.com/photo/2020/01/22/05/48/sunset-4784490_1280.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.home-container {
+    background-color: rgb(255, 251, 251);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.home-contents {
+    font-family: "calibri";
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.home-button{
+    background-color: rgb(10, 16, 64);
+    border-width: 0px;
+    margin:5px;
+    border-radius:0px;
+}
+
+.home-sentence {
+    color: #566573;
+    font-size: 25px;
+    font-family: "calibri";
+    margin:5px;
+}
+
+.home-heading {
+    color: #ffffff;
+    font-family: "calibri";
+    text-align: center;
+    font-size:40px;
+}
+
+.home-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+}
+
+.home-quote {
+    color: #05f712;
+    font-size: 55px;
+    font-family: "calibri";
+    margin:5px;
+}
+
+.carousal-card {
+    width: 1100px;
+    height: 1100px;
+}
+
+.home-card {
+    background-color: rgb(10, 16, 64);
+    width: 400px;
+    height: 137vh;
+    padding: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.aboutus-container {
+    background-color: rgb(10, 16, 64);
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+}
+
+.aboutus-head {
+    font-size: 30px;
+    font-family: "calibri";
+    color: #ffffff;
+}
+
+.aboutus-para {
+    font-size: 20px;
+    font-family: "calibri";
+    color: #ffffff;
+}
+
+.card {
+    width: 300px;
+    padding: 10px;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+.personal-info-card {
+    width: 300px;
+    padding: 10px;
+    border-width: 0px;
+    border-radius: 10px;
+}
+
+.card-text {
+    font-family: "calibri";
+}
+
+.card-button {
+    color: #ffffff;
+    background-color: #566573;
+    font-family: "calibri";
+    border-radius: 6px;
+    border-width: 0px;
+    width: 100px;
+    height: 37px;
+    padding: 5px;
+    margin: 8px;
+}
+
+.aboutus-button{
+    color:#ffffff;
+    background-color: orange;
+    font-family: "calibri";
+    border-radius: 8px;
+    border-width: 0px;
+}
+
+.header{
+    width:100vw;
+    height:80px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-width:2px;
+    border-color: #05d3f7;
+    background-color: #ffffff;
+}
+
+.fit-container{
+    background-color: #ffffff;
+    background-size: cover;
+    height:100vh;
+}
+.yoga-heading{
+    font-family: 'caveat';
+    color:black;
+    font-size:30px;
+}
+
+.explore-menu-section {
+    background-color: white;
+}
+.menu-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+.menu-item-image {
+    border-radius: 16px;
+}
+.menu-card-title {
+    font-family: "Times new roman";
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 24px;
+}
+.menu-item-link {
+    color: #d0b200;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+}
+.menu-item-card {
+    border-radius: 16px;
+}
+.yoga-head-description{
+    color:#51360c;
+    font-family: 'times new roman';
+    font-size: 25px;
+}
+.yoga-para-description{
+    color:#51360c;
+    font-family: 'times new roman';
+    font-size: 18px;
+}
+
+.back-arrow{
+    width:20px;
+    margin:10px;
+}
+
+.img{
+    height:180px;
+    width:250px;
+}
+
+.video{
+    height:500px;
+    width:500px;
+}
+
+.courses-home-container{
+    background-color: #ffffff;
+    background-size:cover;
+    height:100vh;
+}
+#navItem1 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+#navItem2 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+#navItem3 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+#navItem4 {
+    color: #323f4b;
+    font-family: "Roboto";
+}
+.why-yoga-img{
+    width:50px;
+    height:50px;
+    margin:5px;
+}
+.why-exercise-img{
+    width:70px;
+    height:70px;
+    margin:5px;
+}
+.why-yoga-para{
+    color:#51360c;
+    font-weight: 400;
+    font-size:18px;
+    font-family: 'times new roman';
+    text-align:left;
+}
+.courses-head{
+    color:#51360c;
+    font-family: 'times new roman';
+    font-size: 30px;
+    font-weight: bold;
+}
+.courses-para{
+    color:#51360c;
+    font-family: 'caveat';
+    font-size: 20px;
+}
+.clock{
+    width:40px;
+    height:40px;
+}
+.follow-us{
+    background-color:#acb1b1;
+}
+.yoga-container{
+    background-image: url("https://wallpapercave.com/wp/wp3157183.jpg");
+    background-size: cover;
+    height:100vh;
+}
+.exercise-container{
+    background-image: url("https://html.modernwebtemplates.com/sporttrainers/images/slider/img_slide-03.jpg");
+    background-size: cover;
+    height:100vh;
+}
+.self-defence-container{
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/131/638/desktop-wallpaper-2560x1700-cobra-kai-chromebook-pixel-backgrounds-and.jpg");
+    background-size: cover;
+    height:100vh;
+}
+.health-container{
+    background-color:#ffffff;
+}
+.banner-head{
+    font-size:35px;
+    font-family: 'roboto';
+    color:brown;
+}
+.banner-description{
+    font-size:25px;
+    font-family: 'roboto';
+    color:brown;
+}
+
+.banner-button{
+    color:brown;
+    background-color: transparent;
+    width: 130px;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: browna;
+    border-radius: 8px;
+}
+.nav-button{
+    background-color: transparent;
+    border-width: 0px;
+    color:#323f4b;
+    font-family: 'roboto';
+}
+.tips-img{
+    width:500px;
+    height:300px;
+}
+.tips-head{
+    font-family: 'calibri';
+    font-weight:500;
+    color:#323f4b;
+}
+.tips-para{
+    font-family: 'calibri';
+    color:#323f4b;
+}
+.recommended-meals-button {
+    width: 130px;
+    height: 45px;
+    color: white;
+    background-color: #d0b200;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+.dance-bg{
+    background-image:url("https://images.pexels.com/photos/2706654/pexels-photo-2706654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    height:auto;
+}
+.dance-head{
+    color:#ffffff;
+    font-family: 'calibri';
+    font-size:50px;
+}
